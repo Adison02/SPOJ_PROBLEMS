@@ -1,0 +1,88 @@
+1. Przypadek z komentarzem jednolinijkowym:
+#include <iostream>
+
+int main() {
+    // To jest komentarz jednolinijkowy
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+
+2. Przypadek z komentarzem wielolinijkowym:
+#include <iostream>
+
+int main() {
+    /*
+        To jest komentarz wielolinijkowy.
+        Mo¿e rozci¹gaæ siê na kilka linii.
+    */
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+
+3. Przypadek z komentarzem wewn¹trz stringa:
+#include <iostream>
+
+int main() {
+    std::cout << "Ten // tekst nie jest komentarzem!" << std::endl;
+    return 0;
+}
+
+4. Przypadek z komentarzem przed stringiem:
+#include <iostream>
+
+int main() {
+    // To jest komentarz jednolinijkowy
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+
+5. Przypadek z komentarzem po stringu:
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, world!" << std::endl; // To jest komentarz jednolinijkowy
+    return 0;
+}
+
+6. Przypadek z komentarzem po komentarzu:
+#include <iostream>
+
+int main() {
+    // To jest komentarz jednolinijkowy
+    // To jest drugi komentarz jednolinijkowy
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+
+7. Przypadek z komentarzem po stringu i komentarzem wewn¹trz stringa:
+#include <iostream>
+
+int main() {
+    std::cout << "Ten // tekst nie jest komentarzem!" << std::endl; // To jest komentarz jednolinijkowy
+    return 0;
+}
+
+8. Przypadek z komentarzem wielolinijkowym wewn¹trz stringa:
+#include <iostream>
+
+int main() {
+    std::cout << "Ten /* tekst nie jest komentarzem */!" << std::endl;
+    return 0;
+}
+
+9. Przypadek z komentarzem jednolinijkowym wewn¹trz stringa:
+#include <iostream>
+
+int main() {
+    std::cout << "Ten // tekst nie jest komentarzem!" << std::endl;
+    return 0;
+}
+
+10. Przypadek z komentarzami przed i po stringu:
+#include <iostream>
+
+int main() {
+    // To jest komentarz jednolinijkowy
+    std::cout << "Hello, world!" << std::endl; // To jest drugi komentarz jednolinijkowy
+    return 0;
+}
